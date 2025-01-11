@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        header {
+            background: #4579ad;
+            padding: 10px 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0e9ed;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            padding: 20px;
+            background: #e1d8d8;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .main h2 {
+            margin-top: 0;
+        }
+
+        .main form input,
+        .main form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #e3dddd;
+            width: 100%;
+        }
+
+        .main form button {
+            padding: 10px;
+            font-size: 16px;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .main form button:hover {
+            background: #555;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light position-relative w-100">
+            <a class="navbar-brand" href="index.html">Thoughts from sky </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main">
+            <h2 class="text-center">Get in Touch</h2>
+            <form action="send_mail.php" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required><br><br>
+              
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required><br><br>
+              
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+              
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script> <!-- Popper.js -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+
+</body>
+</html>
